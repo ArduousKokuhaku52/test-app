@@ -1,0 +1,78 @@
+.app-main {
+    display: flex;
+}
+
+.app-sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #202225;
+    color: rgba(255, 255, 255, 1);
+}
+
+.app-sidebar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+.app-sidebar-icon {
+    position: relative;
+    display: flex;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-items: center;
+    object-fit: cover;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 25px;
+    transition-property: border-radius;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+.app-sidebar-icon:hover {
+    border-radius: 18px;
+}
+
+.app-sidebar-text {
+    position: relative;
+    display: flex;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 25px;
+    transition-property: border-radius;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    color: rgba(233, 233, 233, 1);
+    background-color: rgba(40, 47, 61, 1);
+}
+
+.app-sidebar-text:hover {
+    border-radius: 18px;
+    background-color: rgba(23, 91, 228, 1);
+}
+
+.app-main-body {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 4rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C2F33;
+}
