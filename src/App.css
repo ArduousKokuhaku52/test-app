@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
     background-color: #202225;
     color: rgba(255, 255, 255, 1);
 }
@@ -67,12 +69,22 @@
     background-color: rgba(23, 91, 228, 1);
 }
 
-.app-main-body {
+.app-interactionbar-body {
     position: fixed;
     display: flex;
     top: 0px;
     left: 4rem;
     height: 100vh;
-    width: 100vw;
+    width: 16rem;
     background-color: #2C2F33;
+}
+
+.app-main-body {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 20rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: #363a3f;
 }
